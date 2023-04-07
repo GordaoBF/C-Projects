@@ -31,29 +31,7 @@ int main(){
     //tambem pode se atribuir valores dessa forma
     sum=sub=div=mult=0;
 
-    while(op!=0){
-        printf("Digite uma opcao de tutorial:\n-1\n-2\n-3\n-4\n-5");
-        scanf("%i",&op2);
-        switch (op2)
-        {
-        case 0:
-            break;
-        case 1:
-            printf("para escrever uma variavel, cada tipo tem uma maneira especifica de ser chamada\ne necessario utilizar o especificador da variavel em conjunto com a variavel que voce quer chamar\nindentificador de int e '%i' pi '%d'\nindentificador de float e '%f'\nindentificador de double e '%lf'\nindentificador de char e '%c', exemplo:\nprintf('tenho %i anos', num);\nprintf('eu tenho %f centimetros', num2);\nprintf('%c e minha letra favorita', string);");
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        case 5:
-            
-            break;            
-        default:
-            printf("opçao invalida");
-        }
-    }
+    
     
 
     
@@ -144,6 +122,31 @@ int main(){
 
     //printf é o escreval, echo e tals, manda uma mensagem porem não suporta ç, acentos e coisas do genero
     printf("Ola meu caro, este codigo existe para tentar ensinar algo sobre a linguagem C,\na execucao e apenas para a parte pratica, para realmente aprender se deve abrir o codigo\n");
+
+    while(op!=0){
+        printf("Digite uma opcao de tutorial:\n0 - Finalizar Execucao\n1 - Output de dados e tipos de dados\n2 - Input de dados\n-3\n-4\n-5");
+        scanf("%i",&op2);
+        switch (op2)
+        {
+        case 0:
+            printf("Finalizando...");
+            break;
+        case 1:
+            printf("para escrever uma variavel, cada tipo tem uma maneira especifica de ser chamada\ne necessario utilizar o especificador da variavel em conjunto com a variavel que voce quer chamar\nindentificador de int e '%i' pi '%d'\nindentificador de float e '%f'\nindentificador de double e '%lf'\nindentificador de char e '%c', exemplo:\nprintf('tenho %i anos', num);\nprintf('eu tenho %f centimetros', num2);\nprintf('%c e minha letra favorita', string);");
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            
+            break;            
+        default:
+            printf("opçao invalida");
+        }
+    }
 
     //o return 0 é basicamente um fim pra funcao
     return 0;   
