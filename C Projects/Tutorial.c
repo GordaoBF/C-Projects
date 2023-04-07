@@ -11,7 +11,7 @@ int main(){
     //algo bom de se fazer é sempre dar nomes em maiusculo para constantes
     const float PI = 3.14;
     
-    //esse exemplo n funciona, pois a constante foi declarada porem não foi inserido um valor
+    //esse exemplo abaixo n funciona, pois a constante foi declarada porem não foi inserido um valor
     /*const int MIN;
     min=60;*/
 
@@ -32,32 +32,36 @@ int main(){
     sum=sub=div=mult=0;
 
     //printf é o escreval, echo e tals, manda uma mensagem porem não suporta ç, acentos e coisas do genero
-    printf("Ola meu caro, este codigo existe para tentar ensinar algo sobre a linguagem C,\na execucao e apenas para a parte pratica, para realmente aprender se deve abrir o codigo\n");
+    printf("Ola meu caro, este codigo existe para tentar ensinar algo sobre a linguagem C,\na execucao e apenas para a parte pratica, para realmente aprender se deve abrir o codigo\n\n");
 
     while(op!=0){
-        printf("Digite uma opcao de tutorial:\n0 - Finalizar Execucao\n1 - Output de dados e tipos de dados\n2 - Declaraco de variaveis\n3 - \n4 - \n5 - \n");
+        printf("Digite uma opcao de tutorial:\n0 - Finalizar Execucao\n1 - Declaraco de variaveis e tipos de dados \n2 - Output de dados\n3 - Operacoes Aritimeticas\n4 - Loops\n5 - \n");
         scanf("%i",&op2);
         switch (op2)
         {
         case 0:
-            printf("Finalizando...");
+            printf("Finalizando...\n\n");
             op=0;
             break;
         case 1:
-            printf("para escrever uma variavel, cada tipo tem uma maneira especifica de ser chamada\ne necessario utilizar o especificador da variavel em conjunto com a variavel que voce quer chamar\nindentificador de int e 'i' e 'd'\nindentificador de float e 'f'\nindentificador de double e 'lf'\nindentificador de char e 'c', exemplo:\nprintf('tenho %+i anos', num);\nprintf('eu tenho %+f centimetros', num2);\nprintf('%+c e minha letra favorita', char);\n\n");
+            printf("\naqui estao as constantes, valores que sao inmodificaveis, sao definidos e ficam com seu valor fixo\nconstantes devem sempre seguir esse padrao abaixo, sempre devem ser declaradas com seu valor\nalgo bom de se fazer e sempre dar nomes em maiusculo para constantes\n\n->const float PI = 3.14;\n\nno exemplo abaixo n iria funcionar, pois a constante foi declarada porem nao foi inserido um valor durante a declaracao\n\n->const int MIN;\n->MIN=60;\n\n");
+            printf("aqui e a declaracao de variaveis(variaveis sendo valores modificaveis)\n\n->int num=12, op=1, op2=0 ; int numeros inteiros e negativos\n->float num2; float numeros reais(vai de 6 a 8 digitos dps da virgula)\n->double doub; double numeros reais(vai ate 15 digitos dps da virgula)\n->char string='d'; char guarda apenas uma caractere\n\noutra forma de declarar variaveis de mesmo tipo\n\n->float sum,sub,div,mult,num3;\n\na atribuicao de valor pode ser feita mais a frente no codigo, como nesse exemplo:\n\n->num2=12.5;\n->num3=1;\n\ntambem pode se atribuir valores dessa forma\n\n->sum=sub=div=mult=0;\n\n");
+            printf("aqui estao um exemplo de declaracao de variaveis booleanas,\nela segue as mesmas regras de declara ao e atribui ao de valor\ndos outros tipos de variaveis\n\n->bool bol = false;\n\na variavel booleana sempre retorna o valor 0 para falso e 1 para verdadeiro\nentao quando for escrever uma variavel booleana ela vai utilizar o mesmo indentificador do int\n\n->printf('indentificador, zero significa falso',bol);\n\nmuitas vezes para receber uma resposta de forma booleana nao e necessario declarar uma variavel e sim apenas comparar outras variaveis\n\n->printf('indentificador, o valor retornado e zero pois o indentificador nao e maior que indentificador',num > num2, num, num2);\n->printf('indentificador, o valor retornado e um pois o indentificador e maior que indentificador',num < num2, num2, num);\n\n");
             break;
         case 2:
-            printf("aqui estao as constantes, valores que sao inmodificaveis, sao definidos e ficam com seu valor fixo\nconstantes devem sempre seguir esse padrao abaixo, sempre devem ser declaradas com seu valor\nalgo bom de se fazer e sempre dar nomes em maiusculo para constantes\nconst float PI = 3.14;\nesse exemplo n funciona, pois a constante foi declarada porem nao foi inserido um valor\nconst int MIN;\nMIN=60;\naqui e a declaraçao de variaveis(variaveis sendo valores modificaveis)\nint num=12, op=1, op2=0 ;// int numeros inteiros e negativos\nfloat num2; float numeros reais(vai de 6 a 8 digitos dps da virgula)\ndouble doub; double nuemros reais(vai até 15 digitos dps da virgula)\nchar string='d'; char guarda apenas uma caractere\noutra forma de declarar variaveis de mesmo tipo\nfloat sum,sub,div,mult,num3;\na atribuiçao de valor pode ser feita mais a frente no codigo, como nesse exemplo:\nnum2=12.5;\nnum3=1;\ntambem pode se atribuir valores dessa forma\nsum=sub=div=mult=0;\n\n");
+            printf("\npara escrever uma variavel, cada tipo tem uma maneira especifica de ser chamada\ne necessario utilizar o especificador da variavel em conjunto com a variavel que voce quer chamar\nindentificador de int e 'i' e 'd'\nindentificador de float e 'f'\nindentificador de double e 'lf'\nindentificador de char e 'c'\nindentificador de bool e 'b', exemplo:\n\n->printf('tenho indentificador anos', num);\n->printf('eu tenho indentificador centimetros', num2);\n->printf('indentificador e minha letra favorita', char);\n\n");
             break;
         case 3:
+            
             break;
         case 4:
             break;
         case 5:
             
-            break;            
+            break;             
         default:
-            printf("opçao invalida");
+            printf("opcao invalida\n\n");
+            break;
         }
     }
 
@@ -87,20 +91,6 @@ int main(){
 
     mult=num*2;
     printf("multiplicacao %.1f\n",mult);
-
-    /*aqui estão um exemplo de declaração de variaveis booleanas, 
-    ela segue as mesmas regras de declaração e atribuição de valor
-    dos outros tipos de variaveis*/
-    bool bol = false;
-
-    /*a variavel booleana sempre retorna o valor 0 para falso e 1 para verdadeiro
-    então quando for escrever uma vaiavel booleana ela vai utilizar o mesmo indentificador do int*/
-    printf("%i, zero significa falso\n",bol);
-
-    /* muitas vezes para receber uma resposta de forma booleana não é necessario declarar uma variavel 
-    e sim apenas comparar outras variaveis*/
-    printf("%i, o valor retornado e zero pois %i nao e maior que %.1f\n",num > num2, num, num2);
-    printf("%i, o valor retornado e um pois %.1f e maior que %i\n",num < num2, num2, num);
 
     //o if else todo mundo sabe como funciona, é igual python, java, php etc
     /*agr vamos falar um pouco do switch, o switch é como um if else onde uma condição
@@ -142,6 +132,8 @@ int main(){
         }
         printf("%i\n", i);
     }    
+
+    printf("Obrigado por utilizar meu tutorial basico :)");
 
     //o return 0 é basicamente um fim pra funcao
     return 0;   
