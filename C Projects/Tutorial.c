@@ -16,13 +16,13 @@ int main(){
     min=60;*/
 
     //aqui é a declaração de variaveis(variaveis sendo valores modificaveis)
-    int num=12, op=1, op2=0;// int numeros inteiros e negativos
+    int num=12 ;// int numeros inteiros e negativos
     float num2; // float numeros reais(vai de 6 a 8 digitos dps da virgula)
     double doub; // double nuemros reais(vai até 15 digitos dps da virgula)
     char string='d'; // char guarda apenas uma caractere
 
     //outra forma de declarar variaveis de mesmo tipo
-    float sum,sub,div,mult,num3 med;
+    float sum,sub,div,mult,num3;
 
     //a atribuição de valor pode ser feita mais a frente no codigo, como nesse exemplo
     num2=12.5;
@@ -53,7 +53,7 @@ int main(){
     printf("soma fora do printf = %.1f\n",sum);
 
     // a operação pode ser feita diretamente dentro do printf
-    printf("soma no printf = %.1f\n",num+num2);
+    printf("soma no printf = %.1f\n",num+PI;
 
     sub=num2-2.5;
     printf("subtracao %.1f\n",sub);
@@ -123,31 +123,7 @@ int main(){
     //printf é o escreval, echo e tals, manda uma mensagem porem não suporta ç, acentos e coisas do genero
     printf("Ola meu caro, este codigo existe para tentar ensinar algo sobre a linguagem C,\na execucao e apenas para a parte pratica, para realmente aprender se deve abrir o codigo\n");
 
-    while(op!=0){
-        printf("Digite uma opcao de tutorial:\n0 - Finalizar Execucao\n1 - Output de dados e tipos de dados\n2 - Input de dados\n-3\n-4\n-5");
-        scanf("%i",&op2);
-        switch (op2)
-        {
-        case 0:
-            printf("Finalizando...");
-            break;
-        case 1:
-            printf("para escrever uma variavel, cada tipo tem uma maneira especifica de ser chamada\ne necessario utilizar o especificador da variavel em conjunto com a variavel que voce quer chamar\nindentificador de int e '%i' pi '%d'\nindentificador de float e '%f'\nindentificador de double e '%lf'\nindentificador de char e '%c', exemplo:\nprintf('tenho %i anos', num);\nprintf('eu tenho %f centimetros', num2);\nprintf('%c e minha letra favorita', string);");
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        case 5:
-            
-            break;            
-        default:
-            printf("opçao invalida");
-        }
-    }
-
+    
     //o return 0 é basicamente um fim pra funcao
     return 0;   
 }
