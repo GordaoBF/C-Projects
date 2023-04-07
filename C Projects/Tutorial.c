@@ -16,13 +16,13 @@ int main(){
     min=60;*/
 
     //aqui é a declaração de variaveis(variaveis sendo valores modificaveis)
-    int num=12;// int numeros inteiros e negativos
+    int num=12, op=1;// int numeros inteiros e negativos
     float num2; // float numeros reais(vai de 6 a 8 digitos dps da virgula)
     double doub; // double nuemros reais(vai até 15 digitos dps da virgula)
     char string='d'; // char guarda apenas uma caractere
 
     //outra forma de declarar variaveis de mesmo tipo
-    float sum,sub,div,mult,num3;
+    float sum,sub,div,mult,num3 med;
 
     //a atribuição de valor pode ser feita mais a frente no codigo, como nesse exemplo
     num2=12.5;
@@ -30,6 +30,11 @@ int main(){
 
     //tambem pode se atribuir valores dessa forma
     sum=sub=div=mult=0;
+
+    while(op!=0){
+
+    }
+    
 
     /*para escrever uma variavel, cada tipo tem uma maneira especifica de ser chamada
     é necessario utilizar o especificador da variavel em conjunto com a variavel que você quer chamar
