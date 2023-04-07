@@ -16,7 +16,7 @@ int main(){
     min=60;*/
 
     //aqui é a declaração de variaveis(variaveis sendo valores modificaveis)
-    int num=12, op=1;// int numeros inteiros e negativos
+    int num=12, op=1, op2=0;// int numeros inteiros e negativos
     float num2; // float numeros reais(vai de 6 a 8 digitos dps da virgula)
     double doub; // double nuemros reais(vai até 15 digitos dps da virgula)
     char string='d'; // char guarda apenas uma caractere
@@ -32,19 +32,32 @@ int main(){
     sum=sub=div=mult=0;
 
     while(op!=0){
-
+        printf("Digite uma opcao de tutorial:\n-1\n-2\n-3\n-4\n-5");
+        scanf("%i",&op2);
+        switch (op2)
+        {
+        case 0:
+            break;
+        case 1:
+            printf("para escrever uma variavel, cada tipo tem uma maneira especifica de ser chamada\ne necessario utilizar o especificador da variavel em conjunto com a variavel que voce quer chamar\nindentificador de int e '%i' pi '%d'\nindentificador de float e '%f'\nindentificador de double e '%lf'\nindentificador de char e '%c', exemplo:\nprintf('tenho %i anos', num);\nprintf('eu tenho %f centimetros', num2);\nprintf('%c e minha letra favorita', string);");
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            
+            break;            
+        default:
+            printf("opçao invalida");
+        }
     }
     
 
-    /*para escrever uma variavel, cada tipo tem uma maneira especifica de ser chamada
-    é necessario utilizar o especificador da variavel em conjunto com a variavel que você quer chamar
-    indentificador de int é "%i" pi "%d"
-    indentificador de float é "%f"
-    indentificador de double é "%lf"
-    indentificador de char é "%c" */
-    printf("tenho %i anos\n", num);
-    printf("eu tenho %f centimetros\n", num2);
-    printf("'%c' e minha letra favorita\n", string);
+    
+    
 
     //o %.1f limita o numero de digitos apos a virgula
     printf("1 numero dps da virgula %.1f\n", num2);
